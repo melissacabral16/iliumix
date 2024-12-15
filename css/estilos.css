@@ -63,6 +63,7 @@ hr {
   position: relative;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 165, 0, 0.6);
   margin-top: 2em;
+  margin: 2em;
 }
 
 div{
@@ -165,6 +166,7 @@ footer p {
   text-align: center;
 
 }
+/*fim tags*/
 
 /*inicio classes*/
 
@@ -246,6 +248,8 @@ footer p {
   padding-bottom: 1em;
 }
 
+
+/*inicio cards*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -258,7 +262,6 @@ footer p {
   background-color: wheat;
   border-radius: 10px;
 }
-
 
 
 /* Grid para organizar os cards */
@@ -310,7 +313,9 @@ button:hover {
   background-color: #3b5361;
 }
 
+/*fim cards*/
 
+/*inicio slideshow*/
 .slideshow-container {
   position: relative;
   width: 80%;
@@ -371,6 +376,8 @@ input[type="radio"] {
 .control:hover {
   background-color: #4F6D7A;
   }
+  
+/*fim slide show*/
 
   .link a{
     color:#4F6D7A;
