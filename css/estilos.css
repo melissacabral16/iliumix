@@ -76,24 +76,16 @@ figure {
 
 figure img {
   max-width: 100%;
-  /* Garante que a imagem ocupe toda a largura disponível */
   height: auto;
-  /* Mantém a proporção da imagem */
   border-radius: 8px;
-  /* Arredonda os cantos da imagem, dando um efeito mais suave */
 }
 
 figcaption {
   font-size: 1.2em;
-  /* Aumenta o tamanho da fonte */
   font-weight: bold;
-  /* Deixa o texto mais chamativo */
   text-align: center;
-  /* Centraliza o texto */
   color: black;
-  /* Cor escura para bom contraste com o fundo */
   padding-top: 10px;
-  /* Dá espaço entre a imagem e o texto */
 }
 
 figcaption p {
@@ -146,11 +138,8 @@ input[type="reset"] {
 
 
 label {
-  display: block;
-  /* Faz o rótulo ocupar a linha inteira */
-
+  display: block; /* faz o rótulo ocupar a linha inteira */
 }
-
 
 nav {
   display: flex;
@@ -180,46 +169,6 @@ footer p {
   color: white;
   padding: 1.25em;
   text-align: center;
-
-}
-
-.aside nav {
-  padding: 2rem;
-  margin-left: 1rem;
-  /* Espaçamento entre o main e o aside */
-  background-color: wheat;
-  border-radius: 8px;
-  height: 7em;
-  width: fit-content;
-  margin: 0 auto;
-  display: block;
-  text-align: justify;
-}
-
-.aside nav h3 {
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-.aside nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.aside nav ul li {
-  margin-bottom: 0.5rem;
-}
-
-.aside nav ul li a {
-  text-decoration: none;
-  color: #4F6D7A;
-  font-weight: bold;
-}
-
-.aside nav ul li a:hover {
-  text-decoration: underline;
 }
 
 /*inicio classes*/
