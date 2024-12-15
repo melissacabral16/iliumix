@@ -182,17 +182,11 @@ footer p {
 
 .imagens {
   display: inline-block;
-  /* Garante que o tamanho do container se ajuste à imagem */
   background-color: #f5deb3;
-  /* Cor de fundo para o container */
   padding: 10px;
-  /* Espaço ao redor da imagem */
   border-radius: 10px;
-  /* Deixa os cantos arredondados (opcional) */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  /* Adiciona uma sombra (opcional) */
 }
-
 
 .title p {
   margin-top: -2em;
@@ -226,40 +220,6 @@ footer p {
   right: 1em;
   padding: 1rem;
   margin-left: 1rem;
-  /* Espaçamento entre o main e o aside */
-  background-color: wheat;
-  border-radius: 8px;
-
-  text-align: justify;
-  width: 15em;
-  align-items: center;
-}
-
-
-.topo h3 {
-  margin-top: 0;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-.topo ul {
-  list-style: none;
-  padding: 0;
-}
-
-.topo ul li {
-  margin-bottom: 0.5rem;
-}
-
-.topo ul li a {
-  text-decoration: none;
-  color: #4F6D7A;
-  font-weight: bold;
-}
-
-.topo ul li a:hover {
-  text-decoration: underline;
-}
 
 .text-box h1 {
   text-align: center;
@@ -364,7 +324,7 @@ button:hover {
 /* Grupo de slides */
 .slides {
   display: flex;
-  width: 300%; /* 100% para cada slide (3 slides = 300%) */
+  width: 400%; /* 100% para cada slide (3 slides = 300%) */
   transition: transform 0.5s ease-in-out;
 }
 
@@ -394,6 +354,10 @@ input[type="radio"] {
 
 #slide3:checked ~ .slides {
   transform: translateX(-200%);
+}
+
+  #slide4:checked ~ .slides {
+  transform: translateX(-300%);
 }
 
 /* Botões de controle */
