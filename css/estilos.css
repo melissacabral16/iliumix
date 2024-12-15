@@ -76,24 +76,16 @@ figure {
 
 figure img {
   max-width: 100%;
-  /* Garante que a imagem ocupe toda a largura disponível */
   height: auto;
-  /* Mantém a proporção da imagem */
   border-radius: 8px;
-  /* Arredonda os cantos da imagem, dando um efeito mais suave */
 }
 
 figcaption {
   font-size: 1.2em;
-  /* Aumenta o tamanho da fonte */
   font-weight: bold;
-  /* Deixa o texto mais chamativo */
   text-align: center;
-  /* Centraliza o texto */
   color: black;
-  /* Cor escura para bom contraste com o fundo */
   padding-top: 10px;
-  /* Dá espaço entre a imagem e o texto */
 }
 
 figcaption p {
@@ -124,16 +116,9 @@ select {
   background-color: wheat;
   color: black;
   margin-bottom: 0.625em;
-  /* Ajuste o valor conforme necessário */
   padding: 0.5em;
-  /* Para deixar os campos mais agradáveis */
   width: 100%;
-  /* Ajuste de largura para os campos */
   border-radius: 0.7em;
-}
-
-select :hover {
-  color: #4F6D7A;
 }
 
 input[type="submit"],
@@ -146,9 +131,7 @@ input[type="reset"] {
 
 
 label {
-  display: block;
-  /* Faz o rótulo ocupar a linha inteira */
-
+  display: block; /* Faz o rótulo ocupar a linha inteira */
 }
 
 
@@ -181,45 +164,6 @@ footer p {
   padding: 1.25em;
   text-align: center;
 
-}
-
-.aside nav {
-  padding: 2rem;
-  margin-left: 1rem;
-  /* Espaçamento entre o main e o aside */
-  background-color: wheat;
-  border-radius: 8px;
-  height: 7em;
-  width: fit-content;
-  margin: 0 auto;
-  display: block;
-  text-align: justify;
-}
-
-.aside nav h3 {
-  width: 100%;
-  margin-top: 0;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-.aside nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.aside nav ul li {
-  margin-bottom: 0.5rem;
-}
-
-.aside nav ul li a {
-  text-decoration: none;
-  color: #4F6D7A;
-  font-weight: bold;
-}
-
-.aside nav ul li a:hover {
-  text-decoration: underline;
 }
 
 /*inicio classes*/
@@ -272,45 +216,10 @@ footer p {
 }
 
 .topo {
-  position: fixed;
+  position: fixed;  
   top: 2em;
   right: 1em;
   padding: 1rem;
-  margin-left: 1rem;
-  /* Espaçamento entre o main e o aside */
-  background-color: wheat;
-  border-radius: 8px;
-
-  text-align: justify;
-  width: 15em;
-  align-items: center;
-}
-
-
-.topo h3 {
-  margin-top: 0;
-  margin-bottom: 1em;
-  text-align: center;
-}
-
-.topo ul {
-  list-style: none;
-  padding: 0;
-}
-
-.topo ul li {
-  margin-bottom: 0.5rem;
-}
-
-.topo ul li a {
-  text-decoration: none;
-  color: #4F6D7A;
-  font-weight: bold;
-}
-
-.topo ul li a:hover {
-  text-decoration: underline;
-}
 
 .text-box h1 {
   text-align: center;
@@ -337,13 +246,12 @@ footer p {
   padding-bottom: 1em;
 }
 
-/* Contêiner geral */
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Estilos das seções */
+
 .beneficios {
   margin-bottom: 40px;
   padding: 20px;
@@ -351,7 +259,7 @@ footer p {
   border-radius: 10px;
 }
 
-/* Título das seções */
+
 
 /* Grid para organizar os cards */
 .grid {
@@ -361,7 +269,7 @@ footer p {
 
 }
 
-/* Estilo dos cards */
+
 .card {
   background-color: #4F6D7A;
   padding: 15px;
@@ -370,7 +278,6 @@ footer p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  /* Adiciona uma sombra (opcional) */
   width: fit-content;
 }
 
@@ -403,7 +310,7 @@ button:hover {
   background-color: #3b5361;
 }
 
-/* Container principal */
+
 .slideshow-container {
   position: relative;
   width: 80%;
@@ -412,7 +319,6 @@ button:hover {
   margin-top: 2em;
 }
 
-/* Grupo de slides */
 .slides {
   display: flex;
   width: 300%; /* 100% para cada slide (3 slides = 300%) */
@@ -429,7 +335,6 @@ button:hover {
   border-radius: 10px;
 }
 
-/* Ocultar os botões radio */
 input[type="radio"] {
   display: none;
 }
