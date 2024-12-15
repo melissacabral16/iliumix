@@ -220,6 +220,11 @@ footer p {
   right: 1em;
   padding: 1rem;
   margin-left: 1rem;
+  background-color: wheat;
+  border-radius: 8px;
+  text-align: justify;
+  width: 15em;
+  align-items: center;
 
 .text-box h1 {
   text-align: center;
