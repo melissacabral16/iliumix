@@ -27,10 +27,18 @@ h1 {
 h2 {
   margin-top: 2em;
   margin-bottom: 2em;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #4F6D7A;
-  
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4F6D7A;
+
+}
+
+h3 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-bottom: 20px;
+  color: #4F6D7A;
+  text-align: center;
 }
 
 p {
@@ -52,7 +60,7 @@ ul {
   margin-left: 1em;
 }
 
-ul p{
+ul p {
   margin-bottom: 2em;
 }
 
@@ -63,15 +71,19 @@ hr {
   position: relative;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 165, 0, 0.6);
   margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-div{
+div {
   margin-top: 1em;
 }
 
 
 figure {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 figure img {
@@ -86,6 +98,8 @@ figcaption {
   text-align: center;
   color: black;
   padding-top: 10px;
+  margin-top: 1em;
+
 }
 
 figcaption p {
@@ -94,7 +108,7 @@ figcaption p {
 
 a {
   color: white;
-  padding: 1em;
+  margin: 1em;
 }
 
 a:hover {
@@ -111,16 +125,14 @@ p {
 
 input[type="text"],
 input[type="tel"],
+input[type="number"],
 textarea,
 select {
   background-color: wheat;
   color: black;
   margin-bottom: 0.625em;
-  /* Ajuste o valor conforme necessário */
   padding: 0.5em;
-  /* Para deixar os campos mais agradáveis */
   width: 100%;
-  /* Ajuste de largura para os campos */
   border-radius: 0.7em;
 }
 
@@ -138,8 +150,11 @@ input[type="reset"] {
 
 
 label {
-  display: block; /* faz o rótulo ocupar a linha inteira */
+  display: block;
+  /* Faz o rótulo ocupar a linha inteira */
+
 }
+
 
 nav {
   display: flex;
@@ -169,7 +184,10 @@ footer p {
   color: white;
   padding: 1.25em;
   text-align: center;
+
 }
+/*fim tags*/
+
 
 /*inicio classes*/
 
@@ -180,12 +198,27 @@ footer p {
   font-size: 1em;
 }
 
+.container_img{
+  display:flex;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+
 .imagens {
   display: inline-block;
   background-color: #f5deb3;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.imagens p{
+text-align: center;
+}
+
+.imagens a{
+  margin: 0;
 }
 
 .title p {
@@ -214,18 +247,6 @@ footer p {
   float: left;
 }
 
-.topo {
-  position: fixed;
-  top: 2em;
-  right: 1em;
-  padding: 1rem;
-  margin-left: 1rem;
-  background-color: wheat;
-  border-radius: 8px;
-  text-align: justify;
-  width: 15em;
-  align-items: center;
-
 .text-box h1 {
   text-align: center;
   font-size: 36px;
@@ -244,12 +265,14 @@ footer p {
   }
 }
 
-.text-box p{
+.text-box p {
   text-align: center;
   margin-left: 0em;
   margin-top: -1em;
   padding-bottom: 1em;
 }
+
+/*inicio cards*/
 
 /* Contêiner geral */
 .container {
@@ -265,7 +288,6 @@ footer p {
   border-radius: 10px;
 }
 
-/* Título das seções */
 
 /* Grid para organizar os cards */
 .grid {
@@ -284,16 +306,15 @@ footer p {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  /* Adiciona uma sombra (opcional) */
   width: fit-content;
 }
 
-.card p{
+.card p {
   color: white;
   width: inherit; /*pega o width do elemento pai(card) */
 }
 
-strong{
+strong {
   text-align: center;
 }
 
@@ -302,7 +323,6 @@ strong{
   transform: translateY(-5px);
 }
 
-/* Botão dos produtos */
 button {
   margin-top: 10px;
   padding: 10px 15px;
@@ -317,25 +337,21 @@ button:hover {
   background-color: #3b5361;
 }
 
-/* Container principal */
-.slideshow-container {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
-  margin-top: 2em;
-}
+/*fim cards*/
+
+
+/*inicio slideshow*/
 
 /* Grupo de slides */
 .slides {
   display: flex;
-  width: 400%; /* 100% para cada slide (3 slides = 300%) */
+  width: 400%;/* 100% para cada slide */
   transition: transform 0.5s ease-in-out;
 }
 
 /* Slide individual */
 .slide {
-  flex: 1 0 100%; /* Cada slide ocupa 100% da largura do container */
+  flex: 1 0 100%;
   padding: 20px;
   text-align: center;
   background: wheat;
@@ -343,25 +359,25 @@ button:hover {
   border-radius: 10px;
 }
 
-/* Ocultar os botões radio */
 input[type="radio"] {
   display: none;
 }
 
 /* Regras para movimentar os slides */
-#slide1:checked ~ .slides {
-  transform: translateX(0%); /*pra onde cada slide vai*/
+#slide1:checked~.slides {
+  transform: translateX(0%);
+  /*pra onde cada slide vai*/
 }
 
-#slide2:checked ~ .slides {
+#slide2:checked~.slides {
   transform: translateX(-100%);
 }
 
-#slide3:checked ~ .slides {
+#slide3:checked~.slides {
   transform: translateX(-200%);
 }
 
-  #slide4:checked ~ .slides {
+#slide4:checked~.slides {
   transform: translateX(-300%);
 }
 
@@ -374,21 +390,13 @@ input[type="radio"] {
 }
 
 .control {
-  background-color: #ccc;
+  background-color: wheat;
   padding: 10px 15px;
   border-radius: 50%;
   cursor: pointer;
- 
+
 }
 
 .control:hover {
   background-color: #4F6D7A;
-  }
-
-  .link a{
-    color:#4F6D7A;
-  }
-
-  .link :hover{
-color:wheat
-  }
+}
